@@ -1,0 +1,19 @@
+1. index_page_owner => 파일 추가 
+Store 틀 안에서 추가한 부분만 남겨놓았으니 그대로 긁어다가 index.js에 추가만 하면 된다!
+
+2. AsideRanking_ver1 => 파일 추가
+dispatch 불러서 처리하는 건 비동기 방식때문에 시점을 딱 맞게 할 수가 없어서, 
+일단 컴포넌트 내부에서 data에 저장하는 방식으로 작성함
+
+3. HeaderNav.vue => 파일 직접 수정
+마이페이지를 클릭했을 때, 
+마이페이지 쪽 뷰의 page owner 가 userId로 재설정 될 수 있도록 메소드 추가하였다
+(한 번에 안불리는 건 heatmap 쪽 entries 어쩌고 함수가 비동기 방식으로 처리되어 있어서.. 수정해야함)
+
+4. MypageFollowList.vue => 파일 직접 수정
+친구 아이디를 클릭했을 때, 친구 mypage로 이동할 수 있게 함
+page owner를 친구로 설정하고, router.go()로 mypage를 다시 불러왔다
+
+
+
+

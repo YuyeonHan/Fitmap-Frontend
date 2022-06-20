@@ -1,0 +1,19 @@
+1. src/view/MyPageView_addHeatMap 추가
+2. src/store/index_addHeatMap 추가
+
+기존 파일과 합칠 부분
+** index.js
+1. state
+   ENTRIES 추가
+2. getters에 
+   get_entries함수 추가
+3. mutations
+   SET_ENTRIES추가
+4. actions
+   getRecordWithEntries 추가
+
+** MyPageView.vue
+1. template
+   <vuejs-heatmap> 태그에 entries 바인딩 추가
+2. script
+   - created 추가
