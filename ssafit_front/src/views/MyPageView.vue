@@ -74,13 +74,11 @@ export default {
   },
   created(){
     this.$store.dispatch('getRecordWithEntries');   //created인지 mounted인지 잘...
-
   },
   mounted: function(){
-        console.log("myPageView mounted 시작")
+        
         let param = this.$store.getters.GET_USERID+" "+this.$store.getters.GET_PAGE_OWNER;
-        console.log(param);
-
+        
         const REST_URL = `http://localhost:9999/api/follow/`+param;
           axios({
             url: REST_URL,

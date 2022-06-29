@@ -31,9 +31,7 @@ export default {
     async setOwner(){
         this.$store.dispatch("SET_PAGE_OWNER",this.$store.getters.GET_USERID);
         //sessionStorage.setItem("page_owner",this.$store.getters.GET_USERID);
-        await this.$store.dispatch('getRecordWithEntries');  
-        console.log("header nav session set completed here")
-        
+        await this.$store.dispatch('getRecordWithEntries'); 
     }
   },
   data(){
